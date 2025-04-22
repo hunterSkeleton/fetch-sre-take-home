@@ -1,0 +1,16 @@
+- body: '{"foo":"bar", "bar": "foo"}'
+  headers:
+    content-type: application/json
+  method: POST
+  name: sample body up
+  url: https://dev-sre-take-home-exercise-rubric.us-east-1.recruiting-public.fetchrewards.com/body
+- name: sample index up http
+  url: http://www.testingmcafeesites.com:80
+- body: "{}"
+  headers:
+    content-type: application/json
+  method: POST
+  name: sample body down
+  url: https://dev-sre-take-home-exercise-rubric.us-east-1.recruiting-public.fetchrewards.com:443/body
+- name: sample error down
+  url: http://dev-sre-take-home-exercise-rubric.us-east-1.recruiting-public.fetchrewards.com:80/error
