@@ -23,7 +23,7 @@
 
 --------
 
-## Function Documentation
+## Function Documentation:
 
 - ### load_config(file_path)
     - Loads and parses the YAML configuration file.
@@ -100,7 +100,7 @@
     - Added timeout of 500ms for request as required.
     - Handled exception for timeout and other client session errors.
     - Handled domain name parsing logic in this function instead of `monitor_endpoint` function since it gave easier control over task
-      scheduling. Added extra split on url to remove port numbers.
+      scheduling. Added extra split on URL to remove port numbers.
 
 - ### Monitor Endpoints function
     - Added extra log stat `TIMEOUT` for extra endpoint debugging or diagnostics.
@@ -109,7 +109,13 @@
     - Measured time taken for the check cycle to complete to calculate sleep time before next cycle starts.
     - Moved the availability percentage printing logic to a new function.
 
-## Future Considerations
+## Testing:
+- Tested code against URLs with port numbers.
+- Tested code against both HTTP and HTTPS URLs.
+- Tested code against different HTTP request methods (e.g. POST, PUT, DELETE, PATCH, ...).
+- Tested code against 150 endpoints that timeout.
+
+## Future Considerations:
 
 - Availability statistic variables can be handled with enums for more modularity.
 - Logging can be improved with other network/connection/resource errors.

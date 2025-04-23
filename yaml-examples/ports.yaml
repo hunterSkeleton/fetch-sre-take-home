@@ -9,8 +9,50 @@
 - body: "{}"
   headers:
     content-type: application/json
-  method: POST
+#  method:
   name: sample body down
   url: https://dev-sre-take-home-exercise-rubric.us-east-1.recruiting-public.fetchrewards.com:443/body
 - name: sample error down
   url: http://dev-sre-take-home-exercise-rubric.us-east-1.recruiting-public.fetchrewards.com:80/error
+- body: '{"foo":"bar", "bar": "foo"}'
+  headers:
+    content-type: application/json
+  method: HEAD
+  name: sample body up
+  url: https://dev-sre-take-home-exercise-rubric.us-east-1.recruiting-public.fetchrewards.com/body
+- body: '{"foo":"bar", "bar": "foo"}'
+  headers:
+    content-type: application/json
+  method: PUT
+  name: sample body up
+  url: https://dev-sre-take-home-exercise-rubric.us-east-1.recruiting-public.fetchrewards.com/body
+- body: '{"foo":"bar", "bar": "foo"}'
+  headers:
+    content-type: application/json
+  method: DELETE
+  name: sample body up
+  url: https://dev-sre-take-home-exercise-rubric.us-east-1.recruiting-public.fetchrewards.com/body
+- body: '{"foo":"bar", "bar": "foo"}'
+  headers:
+    content-type: application/json
+  method: CONNECT
+  name: sample body up
+  url: https://dev-sre-take-home-exercise-rubric.us-east-1.recruiting-public.fetchrewards.com/body
+- body: '{"foo":"bar", "bar": "foo"}'
+  headers:
+    content-type: application/json
+  method: OPTIONS
+  name: sample body up
+  url: https://dev-sre-take-home-exercise-rubric.us-east-1.recruiting-public.fetchrewards.com/body
+- body: '{"foo":"bar", "bar": "foo"}'
+  headers:
+    content-type: application/json
+  method: TRACE
+  name: sample body up
+  url: https://dev-sre-take-home-exercise-rubric.us-east-1.recruiting-public.fetchrewards.com/body
+- body: '{"foo":"bar", "bar": "foo"}'
+  headers:
+    content-type: application/json
+  method: PATCH
+  name: sample body up
+  url: https://dev-sre-take-home-exercise-rubric.us-east-1.recruiting-public.fetchrewards.com/body
